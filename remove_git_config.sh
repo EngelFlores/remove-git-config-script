@@ -1,6 +1,6 @@
 #! bin/bash
 
-rm -f ~/.gitconfig && touch ~/.gitconfig
+truncate -s 0 ~/.gitconfig
 
 LOCAL_CONFIG=$(find /home/ -regex '.*[/]nomeDoProjeto[/].git[/]config' -print -quit)
 
